@@ -2,5 +2,45 @@
   // Required
   "manifest_version": 2,
   "name": "Extension Starter",
-  "version": "0.0"
+  "version": "0.0",
+
+  // Dirty secret of Chrome Extensions: they're just webpages
+  // Scripts that run in the context of 
+  // a webpage that may never be visible
+  // to the user (hence, it's "in the background")
+  "background": {
+    "scripts": [
+    	"js/background/app.js"
+    ],
+    "persistent": false
+  },
+
+  // Scripts that are injected into pages
+  // on a specific domain, or potentially on
+  // all domains
+  "content_scripts": [
+    {
+      "matches": [
+        "*://localhost/*"
+      ],
+      "js": [
+      	"js/content/injection.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+
+  // To allow webpages to communicate with your extension
+  "externally_connectable": {
+    "matches": [
+      "*://localhost/*"
+    ],
+    "accepts_tls_channel_id": false
+  },
+
+  // Permissions
+  "permissions": [
+  	"tabs",
+		"*://localhost/*"
+  ]
 }

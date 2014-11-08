@@ -1,0 +1,1 @@
+document.documentElement.setAttribute("data-extension-id", chrome.runtime.id);
