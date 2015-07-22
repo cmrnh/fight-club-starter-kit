@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Unexpected</title>
+	</head>
+	<body>
+		<a href="#">Knock, knock</a>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+			var extensionId = document.documentElement.getAttribute('("data-extension-id'));
+
+			function isExtensionInstalled() {
+				// If extension is not installed, data-extension-id attribute will not be present in <html>
+				return extensionId !== null;
+			}
+``
+			$('a').click(function(){
+				if (isExtensionInstalled()) {
+					chrome.runtime.sendMessage(extensionId, {}, function(response) {
+						if (typeof response === typeof undefined) {
+							// If sendMessage fails, it doesn't produce a direct error --
+							// we have to look in chrome.runtime.lastError
+							console.log(chrome.runtime.lastError);
+						} else console.log(response);
+					});
+				}
+			});
+		</script>
+	</body>
+</html>

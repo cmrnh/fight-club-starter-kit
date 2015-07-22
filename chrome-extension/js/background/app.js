@@ -14,7 +14,7 @@ function getInstanceId() {
 chrome.runtime.onInstalled.addListener(function(details) {
 	// Open up a window at installation
   if (details.reason === 'install') {
-    chrome.windows.create({ url: 'http://localhost/~cameron/example' });
+    chrome.windows.create({ url: 'http://localhost:1337' });
   }
 });
 
