@@ -1,18 +1,34 @@
 <html>
 	<head>
-		<title>Unexpected</title>
+		<title>Fight Club</title>
+		<link href='//fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				font-family: 'Fira Sans', sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			h1 {
+				font-weight: 300;
+			}
+			a {
+				text-decoration: none;
+				color: rgb(85, 139, 47);
+			}
+		</style>
 	</head>
 	<body>
-		<a href="#">Knock, knock</a>
+		<h1><a href="#">Knock, knock</a></h1>
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script>
-			var extensionId = document.documentElement.getAttribute('("data-extension-id'));
+			var extensionId = document.documentElement.getAttribute('data-fight-club-extension-id');
 
 			function isExtensionInstalled() {
 				// If extension is not installed, data-extension-id attribute will not be present in <html>
 				return extensionId !== null;
 			}
-``
+
 			$('a').click(function(){
 				if (isExtensionInstalled()) {
 					chrome.runtime.sendMessage(extensionId, {}, function(response) {
