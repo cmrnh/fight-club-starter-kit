@@ -1,11 +1,11 @@
 {
   // Required
   "manifest_version": 2,
-  "name": "Extension Starter",
+  "name": "Fight Club Starter Kit",
   "version": "0.0",
 
   // Dirty secret of Chrome Extensions: they're just webpages
-  // Scripts that run in the context of 
+  // Scripts that run in the context of
   // a webpage that may never be visible
   // to the user (hence, it's "in the background")
   "background": {

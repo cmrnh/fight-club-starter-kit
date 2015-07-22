@@ -10,11 +10,6 @@ Code interacting with browser extensions can live in four places:
 
 This [Stack Overflow answer](http://stackoverflow.com/a/9916089/4700328) has a great shorthand explanation for each. It also might help to start by taking a look at the [minimum viable Chrome Extension](https://github.com/cmrnh/extension-starter/tree/82bf00934c5e07f0e2c154e0af1f2b4a714d99bb). 
 
-## Installing in Chrome
-
-0. Navigate to `chrome://extensions` and enable `Developer Mode`
-0. Click `Load unpacked extension`
-0. Navigate to `build/chrome`
 
 ## Next-level $#!t
 
