@@ -8,8 +8,9 @@ Code interacting with browser extensions can live in four places:
 0. Injected scripts
 0. Your web app
 
-This [Stack Overflow answer](http://stackoverflow.com/a/9916089/4700328) has a great shorthand explanation for each. It also might help to start by taking a look at the [minimum viable Chrome Extension](https://github.com/cmrnh/extension-starter/tree/82bf00934c5e07f0e2c154e0af1f2b4a714d99bb). 
+This [Stack Overflow answer](http://stackoverflow.com/a/9916089/4700328) has a great shorthand explanation for each. It also might help to start by taking a look at the [minimum viable Chrome Extension](https://github.com/cmrnh/extension-starter/tree/82bf00934c5e07f0e2c154e0af1f2b4a714d99bb).
 
+This repo demonstrates how to use a content script to enable your web app to talk to the extension's background script, which has full access to the `chrome.*` APIs.
 
 ## Next-level $#!t
 
