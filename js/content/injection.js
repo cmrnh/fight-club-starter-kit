@@ -1,1 +1,1 @@
-document.documentElement.setAttribute("data-extension-id", chrome.runtime.id);
+document.documentElement.setAttribute("data-fight-club-extension-id", chrome.runtime.id);
