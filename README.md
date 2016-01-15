@@ -15,7 +15,3 @@ This repo demonstrates how to use a content script to enable your web app to tal
 ## Next-level $#!t
 
 Learn how to create a build process and the basics of mapping Chrome resources to Safari and Firefox in [Developing Cross Browser Extensions](http://frontendbabel.info/articles/developing-cross-browser-extensions/) by [@alexbeletsky](https://github.com/alexbeletsky).
-
-## Why Fight Club?
-
-Repositories created for [Unexpected](https://www.beunexpected.com) are named after movies with twist endings.
